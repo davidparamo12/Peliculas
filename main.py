@@ -2,18 +2,12 @@ from fastapi import FastAPI
 import pandas as pd
 import numpy as np
 
-df_mes = pd.read_csv(
-    r"Dataset/df_tabla_mes.csv")
-df_dia = pd.read_csv(
-    r"Dataset/df_tabla_dia.csv")
-df_titulo = pd.read_csv(
-    r"Dataset/df_tabla_titulo.csv")
-df_voto_200 = pd.read_csv(
-    r"Dataset/df_tabla_voto.csv")
-df_actor = pd.read_csv(
-    r"Dataset/df_tabla_actor.csv")
-df_director = pd.read_csv(
-    r"Dataset/df_nombre_director.csv")
+df_mes = pd.read_csv("Dataset/df_tabla_mes.csv")
+df_dia = pd.read_csv("Dataset/df_tabla_dia.csv")
+df_titulo = pd.read_csv("Dataset/df_tabla_titulo.csv")
+df_voto_200 = pd.read_csv("Dataset/df_tabla_voto.csv")
+df_actor = pd.read_csv("Dataset/df_tabla_actor.csv")
+df_director = pd.read_csv("Dataset/df_nombre_director.csv")
 
 app = FastAPI()
 
